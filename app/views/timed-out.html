@@ -1,0 +1,32 @@
+{% extends 'layout-notimeout.html' %}
+{% set pageTitle = "You have been signed out" %}
+{% set hideBack = true %}
+
+<!-- Add the following line to add to the class of the block content container  
+change the # to ∞ to uncomment -->
+{% set mainClasses = "nhsuk-u-padding-top-4" %}
+
+
+{% block pageTitle %}
+{{pageTitle}} | {{serviceName}}
+{% endblock %}
+
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1 class="nhsuk-heading-xl">{{pageTitle}}</h1>
+
+    <p>You have been signed out and any information you have not saved has been deleted because you did not do anything for 20 minutes. This is to protect your information.</p>
+
+    <form action="start" method="post">
+      <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+        Sign back in
+      </button>
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

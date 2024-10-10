@@ -1,0 +1,69 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Session Timeout and Cookie Component
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        Session Timeout and Cookie Component
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+      <p class="nhsuk-lede-text">
+        This repository shows how the node session timeout and cookie components look when implemented into the NHSBSA prototype kit
+      </p>
+
+      <hr>
+
+      <h2>
+        Instructions
+      </h2>
+
+      <p>
+        You can download the following presentations which run through a step by step of how each component can be integrated into your prototype.
+      </p>
+
+      <ul>
+        <li>
+          Session timeout components: <a href="/downloads/Installing-Timeout-Component.pptx" target="_blank">how to guide</a>
+        </li>
+        <li>
+          Cookie component: <a href="#">how to guide</a>
+        </li>
+      </ul>
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}
